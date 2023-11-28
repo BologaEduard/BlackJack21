@@ -1,0 +1,10 @@
+
+P
+java:S11410"5Extract this nested try block into a separate method.(Íù¹ãùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(¡×©öúÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡çü
+c	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³‡´«
+c	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş°úÕ
+h	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë½íøÿÿÿÿ

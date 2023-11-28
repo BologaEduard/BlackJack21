@@ -1,0 +1,35 @@
+
+l
+java:S1192Ã"PDefine a constant instead of duplicating this literal "Times New Roman" 7 times.(è–ùÇÿÿÿÿÿ
+>
+java:S1604p"(Make this anonymous inner class a lambda(«Ñƒò
+?
+java:S1604‹"(Make this anonymous inner class a lambda(×á¯
+D
+java:S1604Ÿ"(Make this anonymous inner class a lambda(ëıƒ²üÿÿÿÿ
+D
+java:S1604½"(Make this anonymous inner class a lambda(ÈÈ‘üÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ
+n
+java:S37761"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Åí‹d8¶°ªÁ1
+f
+java:S3252="IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8Šâ®ªÁ1
+G
+java:S1481Õ")Remove this unused "game" local variable.(ÇÌÎ¨8§â®ªÁ1
+p	java:S100œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒõÃËúÿÿÿÿ8°â®ªÁ1
+u
+java:S3776œ"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(ŒõÃËúÿÿÿÿ8°â®ªÁ1
+H	java:S106×"+Replace this use of System.out by a logger.(òÌÄİ8Äâ®ªÁ1
+M	java:S106Ø"+Replace this use of System.out by a logger.(İîæ…ıÿÿÿÿ8Åâ®ªÁ1
+E
+java:S1128"/Remove this unused import 'java.awt.Component'.(Ÿğ¯ö
+M
+java:S1128"7Remove this unused import 'java.awt.event.KeyListener'.(ç„›û
+F
+java:S1128"0Remove this unused import 'javax.swing.JButton'.(´ÀÃ“
+E
+java:S1128"/Remove this unused import 'javax.swing.JLabel'.(ı—àÓ
+J
+java:S1128"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé
+O
+java:S1128"9Remove this unused import 'javax.swing.SpinnerDateModel'.(¤°ŞÌ

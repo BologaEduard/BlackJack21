@@ -1,0 +1,25 @@
+
+r	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ÂËİúÿÿÿÿ8ê®˜©Á1
+E
+java:S1604E"(Make this anonymous inner class a lambda(ê—²Ù8ê®˜©Á1
+E
+java:S1604q"(Make this anonymous inner class a lambda(ê—²Ù8ë®˜©Á1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ8ì®˜©Á1
+H
+java:S1948!"&Make "user" transient or serializable.(’Ø¾ıÿÿÿÿ8ş®˜©Á1
+o	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ®Ÿúÿÿÿÿ8€¯˜©Á1
+f
+java:S32529"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8‚¯˜©Á1
+N
+java:S1905E"1Remove this unnecessary cast to "ActionListener".(ê—²Ù8„¯˜©Á1
+o	java:S100^"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ÕËùıÿÿÿÿ8ˆ¯˜©Á1
+f
+java:S3252e"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8Š¯˜©Á1
+N
+java:S1905q"1Remove this unnecessary cast to "ActionListener".(ê—²Ù8‹¯˜©Á1
+I
+java:S1128",Remove this unused import 'java.awt.Window'.(’İ®8¯˜©Á1
+Q
+java:S1128	"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰Îé8¯˜©Á1
+S
+java:S1128"7Remove this unused import 'javax.swing.SwingUtilities'.(…äü$8¯˜©Á1

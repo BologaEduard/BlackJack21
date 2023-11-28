@@ -1,0 +1,14 @@
+
+>
+java:S1604:"(Make this anonymous inner class a lambda(”Á›Ê
+>
+java:S1604D"(Make this anonymous inner class a lambda(¯ Æ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ
+_
+java:S3252,"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´
+E
+java:S1128"/Remove this unused import 'java.awt.Dimension'.(˜‚º·
+K
+java:S1128"0Remove this unused import 'java.awt.FlowLayout'.(Íğç¢ÿÿÿÿÿ
+E
+java:S1128"/Remove this unused import 'javax.swing.JPanel'.(ò‚•

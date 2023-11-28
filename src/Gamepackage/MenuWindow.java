@@ -10,12 +10,23 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+/**
+ * The MenuWindow class represents the main menu window of the Blackjack game.
+ * It includes buttons for starting a new game and loading a saved game.
+ */
 public class MenuWindow{
 
+    /** The width of the menu window. */
     private int menuWidth;
+    /** The height of the menu window. */
     private int menuheight;
+    /** The main JFrame for the menu window. */
     private JFrame frame;
 
+    /**
+     * Constructs a new instance of the MenuWindow class.
+     * Initializes the menu dimensions, buttons, and sets up the menu window.
+     */
     public MenuWindow() {
         menuWidth = 1300;
         menuheight = 740;
@@ -43,6 +54,7 @@ public class MenuWindow{
 
         frame.add(button.buttonPanel, BorderLayout.SOUTH);
 
+        // Add action listeners for the New Game and Load buttons.
         button.starButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -69,6 +81,9 @@ public class MenuWindow{
 
     }
 
+    /**
+     * Sets the background image for the menu window.
+     */
     public void setMenu() {
         ImageIcon bgIcon = new ImageIcon("educasino.jpg");
         JLabel bgLabel = new JLabel(bgIcon);

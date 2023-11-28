@@ -1,0 +1,19 @@
+
+j
+java:S1104
+"OMake bot a static final constant or non-public and provide accessors if needed.(¸§œóşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§ÂĞÛ
+V
+java:S1854";Remove this useless assignment to local variable "window1".(‚‹ºŒùÿÿÿÿ
+G
+java:S1481",Remove this unused "window1" local variable.(‚‹ºŒùÿÿÿÿ
+Q
+java:S18544";Remove this useless assignment to local variable "window1".(ãÖ
+@	java:S106+"+Replace this use of System.out by a logger.(³²¹
+B
+java:S14814",Remove this unused "window1" local variable.(ãÖ
+V
+java:S1854O";Remove this useless assignment to local variable "window1".(‚‹ºŒùÿÿÿÿ
+G
+java:S1481O",Remove this unused "window1" local variable.(‚‹ºŒùÿÿÿÿ

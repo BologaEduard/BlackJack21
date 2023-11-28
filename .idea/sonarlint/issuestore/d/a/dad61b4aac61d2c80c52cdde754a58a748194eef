@@ -1,0 +1,19 @@
+
+†
+java:S1319H"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(îÃ°·
+)
+java:S1700
+"Rename field "deck"(Íş–ï
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(œöÁ¯ûÿÿÿÿ
+E	java:S106*"+Replace this use of System.out by a logger.(Õ‡ü´ıÿÿÿÿ
+@	java:S106+"+Replace this use of System.out by a logger.(ëÛ°Å
+3
+java:S21194"Save and re-use this "Random".(¼İÅf
+E	java:S106>"+Replace this use of System.out by a logger.(«»ÃËûÿÿÿÿ
+@	java:S106?"+Replace this use of System.out by a logger.(ëÛ°Å
+h	java:S100Q"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“ÖĞ‡øÿÿÿÿ
+c	java:S100["NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×¶±¬
+@	java:S106c"+Replace this use of System.out by a logger.(è•‘
+E	java:S106e"+Replace this use of System.out by a logger.(İÆï‹úÿÿÿÿ
+E	java:S106g"+Replace this use of System.out by a logger.(Ø–ªùÿÿÿÿ
+E	java:S106j"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ

@@ -26,6 +26,10 @@ import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.SwingUtilities;
 
+/**
+ * The GameWindow class represents the main game window for the Blackjack game.
+ * It displays the game board, cards, buttons, and handles user interactions.
+ */
 public class GameWindow {
     private int boardWidth;
     private int boardheight; 
@@ -33,9 +37,15 @@ public class GameWindow {
     private JPanel gamePanel;
     private int cardWidth;
     private int cardHeight;
-
     private int total;
 
+    /**
+     * Constructs a new instance of the GameWindow class.
+     *
+     * @param bot  The bot (dealer) in the game.
+     * @param user The user playing the game.
+     * @param deck The deck of cards used in the game.
+     */
     public GameWindow (WeakBot bot, User user,Deck deck) {
         boardWidth = 1000;
         boardheight = 750;
@@ -83,6 +93,7 @@ public class GameWindow {
 
         frame.add(gamePanel);
 
+        // Set up buttons and their listeners.
         button.buttonPanel.setBounds(0, boardheight - 50, boardWidth, 50);
         button.hitButton.setFocusable(false);
         button.buttonPanel.add(button.hitButton);
@@ -204,6 +215,12 @@ public class GameWindow {
         
     }
 
+    /**
+     * Draws the cards in the dealer's hand.
+     *
+     * @param grph The graphics context used for drawing.
+     * @param bot  The WeakBot representing the dealer.
+     */
     public void drawDealerHand(Graphics grph, WeakBot bot) {
         for(int i=0; i < bot.getHand().size(); i++ ) {
             Card card = bot.getHand().get(i);
@@ -212,6 +229,12 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Draws the cards in the user's hand.
+     *
+     * @param grph The graphics context used for drawing.
+     * @param user The User representing the player.
+     */
     public void drawUserHand(Graphics grph, User user) {
         for(int i=0; i < user.getHand().size(); i++) {
             Card card = user.getHand().get(i);
@@ -220,11 +243,29 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Draws an image on the game board.
+     *
+     * @param grph   The graphics context used for drawing.
+     * @param source The file path of the image to be drawn.
+     * @param x      The x-coordinate for the top-left corner of the image.
+     * @param y      The y-coordinate for the top-left corner of the image.
+     */
     public void drawIMG(Graphics grph, String source, int x, int y) {
         Image bgImage = new ImageIcon(source).getImage();
         grph.drawImage(bgImage, x, y, boardWidth, boardheight, null);
     }
 
+    /**
+     * Draws the hidden or revealed card image.
+     *
+     * @param grph   The graphics context used for drawing.
+     * @param source The file path of the image to be drawn.
+     * @param x      The x-coordinate for the top-left corner of the image.
+     * @param y      The y-coordinate for the top-left corner of the image.
+     * @param button The Button instance containing game buttons.
+     * @param bot    The WeakBot representing the dealer.
+     */
     public void drawHiddenIMG(Graphics grph, String source, int x, int y, Button button, WeakBot bot) {
         Image hiddenimg = new ImageIcon(getClass().getResource(source)).getImage();
         if(!button.stayButton.isEnabled()) {
@@ -233,6 +274,13 @@ public class GameWindow {
         grph.drawImage(hiddenimg, x, y, cardWidth, cardHeight, null);
     }
 
+    /**
+     * Determinates who is the winner of the round, after hittng stay button.
+     * @param grph The graphics context used for drawing.
+     * @param button The Button instance containing game buttons.
+     * @param user The User representing the user of the game.
+     * @param bot The WeakBot representing the dealer.
+     */
     public void WhoIsTheWinner(Graphics grph, Button button, User user, WeakBot bot) {
         if(!button.stayButton.isEnabled()) {
 
@@ -280,6 +328,12 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Draws the hand of the bot
+     * @param grph The graphics context used for drawing.
+     * @param button The Button instance containing game buttons.
+     * @param bot The WeakBot representing the dealer.
+     */
     public void showHandBot(Graphics grph, Button button, WeakBot bot) {
 
         String bothand = valueOf(bot.faceduupcard.getValue());
@@ -305,7 +359,13 @@ public class GameWindow {
             }
         }
     }
-    
+
+    /**
+     * Draws the hand of the user.
+     * @param grph The graphics context used for drawing.
+     * @param button The Button instance containing game buttons.
+     * @param user The User representing the user of the game.
+     */
     public void showHandUser(Graphics grph, Button button, User user) {
 
         String userhand = valueOf(user.handValue);
@@ -318,6 +378,11 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Draws the jetons of the bot.
+     * @param grph The graphics context used for drawing.
+     * @param bot The WeakBot representing the dealer.
+     */
     public void showJetonsBot(Graphics grph, WeakBot bot) {
         
         String botjetons = valueOf(bot.getJetons());
@@ -329,6 +394,11 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Draws the jetons of the user.
+     * @param grph The graphics context used for drawing.
+     * @param user The User representing the user of the game.
+     */
     public void showJetonsUser(Graphics grph, User user) {
         
         String userjetons = valueOf(user.getJetons());
@@ -340,6 +410,13 @@ public class GameWindow {
         }
     }
 
+    /**
+     *  Draws the total bet of the actual round.
+     * @param grph The graphics context used for drawing.
+     * @param user The User representing the user of the game.
+     * @param bot The WeakBot representing the dealer.
+     * @param button The Button instance containing game buttons.
+     */
     public void showTotalBet(Graphics grph, User user, WeakBot bot, Button button) {
         
         total = 0;
@@ -354,10 +431,23 @@ public class GameWindow {
         }
     }
 
+    /**
+     * Returns the string representation of the specified integer.
+     *
+     * @param x The integer to be converted to a string.
+     * @return The string representation of the integer.
+     */
     public String valueOf(int x) {
         return String.valueOf(x);
     }
 
+    /**
+     * Updates the jetons (chips) for both the user and the bot based on the specified value.
+     *
+     * @param value The value to be subtracted from both user and bot jetons.
+     * @param user  The User instance representing the player.
+     * @param bot   The WeakBot instance representing the dealer.
+     */
     public void updateJetons(int value, User user, WeakBot bot) {
         if((user.jetons - value) >= 0  && (bot.jetons - value) >= 0) {
             user.jetons -= value;
@@ -366,6 +456,13 @@ public class GameWindow {
         
     }
 
+    /**
+     * Updates the bets for both the user and the bot based on the specified value.
+     *
+     * @param value The value to be added to both user and bot bets.
+     * @param user  The User instance representing the player.
+     * @param bot   The WeakBot instance representing the dealer.
+     */
     public void updateBets(int value, User user, WeakBot bot) {
             
         if(user.jetons - value >= 0 && bot.jetons - value >= 0) {
@@ -378,6 +475,13 @@ public class GameWindow {
         
     }
 
+    /**
+     * Updates jetons for both the user and the bot after the stay action.
+     *
+     * @param value The value used in the bet.
+     * @param user  The User instance representing the player.
+     * @param bot   The WeakBot instance representing the dealer.
+     */
     public void updateJetonsAfterStay(int value, User user, WeakBot bot) {
         if(user.handValue > 21 && bot.handValue > 21 || user.handValue == bot.handValue) {
                 user.jetons += total/2;
@@ -389,11 +493,24 @@ public class GameWindow {
             }
     }
 
+    /**
+     * Starts the next round of the game.
+     *
+     * @param user The User instance representing the player.
+     * @param bot  The WeakBot instance representing the dealer.
+     */
     public void nextRound(User user, WeakBot bot){
         Game nextround = new Game();
         nextround.nextRound(user, bot);
     }
 
+    /**
+     * Checks if the game is over based on the jetons of the user and the bot.
+     *
+     * @param user The User instance representing the player.
+     * @param bot  The WeakBot instance representing the dealer.
+     * @return True if the game is over, otherwise false.
+     */
     public boolean gameOver(User user, WeakBot bot) {
         return (user.jetons == 0 || bot.jetons == 0);
     }
